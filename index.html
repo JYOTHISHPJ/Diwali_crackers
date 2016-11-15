@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>Diwali crackers</title>
+    <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link href="css/WebSiteStyle.css" rel="stylesheet" type="text/css" />
+<link href="css/styleproperty.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src='//www.google.com/jsapi' type='text/javascript'></script>
+<script type="text/javascript">  
+    $(window).mousedown(function (event) {
+        var audio = document.getElementById('audioid');
+        audio.pause();
+        audio.currentTime = 0;
+
+
+        $('#img1').attr('src', '/animationimg/fireworks-animation-19-2.gif');
+        $('#animation').show();
+        var x = event.pageX;
+        var y = event.pageY;
+        var snowball = document.getElementById("img1");
+     
+        snowball.style.display = '';
+        snowball.style.position = 'absolute';
+        snowball.style.left = x - 160 + 'px';
+        snowball.style.top = y - 160 + 'px';
+    
+        //var t=new Date().getTime();
+
+        $('#img1').attr('src', '/animationimg/fireworks-animation-19-2.gif');
+        audio.play();
+        $("#animation").hide(800);
+
+    });
+
+
+    
+
+</script>
+
+       
+
+
+    
+    <style>
+
+
+body {background-color: #050403;}
+
+
+        fade {
+            opacity: 0.0;
+            transition: all 100.0s;
+        }
+   
+
+    </style>
+</head>
+<body bgcolor="#050403">
+    <form id="form1" runat="server">
+    
+    <div id="animation" >
+    
+        <img class="img-responsive"  id="img1" style="display: none;position:absolute;" src=""  />
+        <audio id=audioid  >
+  <source src="/animationimg/salamisound-4330966-loud-firecrackers-shot-or.mp3" type="audio/ogg"/>
+</audio>
+
+
+
+    </div>
+       <div><marquee><p style="color:goldenrod;font-size: 25px;
+    font-family: cursive;
+    font-style: inherit;">Wishing you a HAPPY DIWALI glowing with peace,joy and prosperity</p></marquee></div> 
+
+    </form>
+    
+</body>
+</html>
